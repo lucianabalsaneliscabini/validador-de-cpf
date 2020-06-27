@@ -1,11 +1,11 @@
 cpf = input('Digite seu cpf: ')
-validateNumbers = cpf[:9]
 
 # Permitindo que o usuário digite somente 11 dígitos 
 while len(cpf) != 11:
-    print('Por favor, digite um valor válido !')
+    print('\033[32mPor favor, digite um valor válido !\033[m')
     cpf = input('Digite seu cpf: ')
 
+validateNumbers = cpf[:9]
 
 multiplicador_1 = 10
 somador_1= 0
