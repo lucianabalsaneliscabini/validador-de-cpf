@@ -1,6 +1,5 @@
 cpf = input('Digite seu cpf: ')
 
-# Permitindo que o usuário digite somente 11 dígitos 
 while len(cpf) != 11:
     print('\033[32mPor favor, digite um valor válido !\033[m')
     cpf = input('Digite seu cpf: ')
@@ -30,7 +29,6 @@ else:
     concatenation = validateNumbers + primeiroDigito
 
 
-# Segundo dígito referente ao cpf digitado
 
 somador_2 = 0
 multiplicador_2 = 11
@@ -47,15 +45,11 @@ if segundoDigito > 9:
     segundoDigito = 0
 
 
-
-# Transformando ambos os dígitos em strings para poder concatená-los
 primeiroDigito = str(primeiroDigito)
 segundoDigito = str(segundoDigito)
 
 juntar = primeiroDigito + segundoDigito
 validateNumbers = cpf[9:11]
-
-# Comparação entre os digítos validados e os apresentados pelo usuário
 
 if juntar == validateNumbers:
     print('\033[34mCPF VÁLIDO\033[m')
