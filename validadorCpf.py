@@ -9,7 +9,6 @@ validateNumbers = cpf[:9]
 multiplicador_1 = 10
 somador_1= 0
 
-# Primeiro dígito referente ao cpf digitado
 
 for number in validateNumbers:
     result = int(number) * multiplicador_1
@@ -21,14 +20,11 @@ primeiroDigito = DigitlCalculation
 
 if primeiroDigito > 9:
     primeiroDigito = 0
-    # Transformando o valor encontrado em string - para poder concatená-lo ao restante do CPF.
     primeiroDigito = str(primeiroDigito)
     concatenation = validateNumbers + primeiroDigito
 else:
     primeiroDigito = str(primeiroDigito)
     concatenation = validateNumbers + primeiroDigito
-
-
 
 somador_2 = 0
 multiplicador_2 = 11
